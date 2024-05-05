@@ -16,16 +16,26 @@ nav{
 
 .logo{
     color: black;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     font-style: italic;
     padding: 0 2rem;
 }
 
+.nav-items{
+    display: flex;
+    gap: 30px;
+    padding: 0 1.5rem;    
+}
+
 nav a{
     text-decoration: none;
     color: black;
-    padding: 0 1.5rem;
+    /* padding: 0 1.5rem; */
+}
+
+nav a:hover{
+    color: white;
 }
 
 .hero{
@@ -37,6 +47,7 @@ nav a{
     grid-template-columns: 1fr 1fr;
     height: 95vh;
     padding: 3rem calc((100vw - 1300px) / 2);
+    align-items: start;
 }
 
 .column-left{
@@ -63,7 +74,40 @@ nav a{
 button{
     padding: 1rem 3rem;
     font-size: 1rem;
-    border: none;
+    border: 1px solid;
     color: #fdcc04;
     background: black;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+    border-radius: 50px;
+}
+
+button:hover {
+    /* translate: 0px -10px; */
+    background: white;
+    border-color: black;
+    scale: 1.05; 
+    opacity: 0.8;
+}
+
+img{
+    object-fit: cover;
+}
+
+.column-right{
+    display: flex;
+    justify-content: center;
+    padding: 0rem 2rem;
+    align-items: center;
+}
+
+.hero-image{
+    width: 400px;
+    height: 400px;
+}
+
+@media  screen and (max-width: 760px){
+    .hero-container{
+        grid-template-columns: 1fr;
+    }
 }
