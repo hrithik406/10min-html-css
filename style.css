@@ -16,7 +16,7 @@ nav{
 
 .logo{
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     font-style: italic;
     padding: 0 2rem;
@@ -26,6 +26,7 @@ nav{
     display: flex;
     gap: 30px;
     padding: 0 1.5rem;    
+    font-size: 1.5rem;
 }
 
 nav a{
@@ -45,7 +46,7 @@ nav a:hover{
 .hero-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 95vh; 
+    height: 115vh; 
     padding: 3rem calc((100vw - 1300px) / 2);
     align-items: start;
 }
@@ -65,6 +66,10 @@ nav a:hover{
     font-size: 3rem;
 }
 
+.column-left h3{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
 .column-left p{
     margin-bottom: 2rem;
     font-size: 1.5rem;
@@ -92,6 +97,7 @@ button:hover {
 
 img{
     object-fit: cover;
+    margin-inline: auto;
 }
 
 .column-right{
@@ -99,6 +105,9 @@ img{
     justify-content: center;
     padding: 0rem 2rem;
     align-items: center;
+    /* background-color: blue;
+    width: 100%;
+    height: 100vh; */
 }
 
 .hero-image{
@@ -114,8 +123,14 @@ img{
 
 footer{
     background-color: #fdcc04;
+    font-size: 1.5rem;
 }
 
 main{
     background-color: #fdcc04;
+}
+
+
+details{
+    font-size: x-large;
 }
